@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
-    const [theme, setTheme] = useState("dark-theme");
+    const [theme, setTheme] = useState("light-theme");
 
     const toggleMode = () => {
-        theme === "light-theme" ? setTheme("dark-theme") : setTheme("light-theme");
+        theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
     }
 
     useEffect(() => {
